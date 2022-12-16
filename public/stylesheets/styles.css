@@ -5,3 +5,195 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+/*---------------GENERAL--------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: fit-content;
+  min-height: 100vh;
+  max-width: 100vw;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #f7f9f9;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.content-container {
+  padding: 0 2rem;
+  min-height: 62vh;
+}
+/*---------------NAV-BAR--------------------*/
+.nav-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2081c3;
+  padding: 1rem 0rem 1rem 2.5rem;
+  position: sticky;
+  height: 5rem;
+  box-shadow: 0px 4px 5px #bfbfbf;
+  margin-bottom: 5.5rem;
+}
+
+.nav-bar-container .nav-container ul {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+.nav-bar-container .nav-container ul li a {
+  text-decoration: none;
+  color: #f7f9f9;
+  text-transform: uppercase;
+}
+
+.nav-bar-container .nav-container ul li a:hover {
+  color: #0a2c42;
+  font-weight: 700;
+}
+
+/*---------------INDEX--------------------*/
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.index-container .principal-img-beer {
+  margin-bottom: 4rem;
+}
+
+.index-container .principal-img-beer  img{
+  width: 25rem;
+}
+
+.index-container .buttons-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.index-container .buttons-index .button {
+  background-color: #2081c3;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.3rem;
+  color: #f7f9f9;
+  box-shadow: 0px 4px 4px #bfbfbf;
+  cursor: pointer;
+}
+
+.index-container .buttons-index .button:hover {
+  box-shadow: 0px 4px 4px #2081c3;
+  background-color: #f7f9f9;
+  color: #2081c3;
+}
+
+/*---------------BEER PARTIAL--------------------*/
+
+.beer-cards {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.beer-cards div.img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.beer-cards img.beer-img {
+  height: 14rem;
+}
+
+.beer-cards div.info-container h4.beer-name a {
+  text-decoration: none;
+  color: #010101; 
+}
+
+.beer-cards div.info-container h4.beer-name a:hover{
+  color: #2081c3;
+}
+
+.beer-cards div.info-container h2.beer-tagline {
+  color: #bfbfbf;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/*---------------BEERS-PAGE--------------------*/
+
+.all-beers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*---------------BEER-DETAILS-PAGE--------------------*/
+
+.details-beer-page {
+  display: flex; 
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+/*---------------RANDOM-BEER-PAGE--------------------*/
+
+.random-beer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-beer-container .info-random-beer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 1.3rem;
+}
+
+.random-beer-container .info-random-beer h3 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.random-beer-container .info-random-beer ul {
+  list-style: inherit;
+  margin-bottom: 1rem;
+}
+
+/*---------------FOOTER--------------------*/
+
+footer.footer {
+  background-color: #0a2c42;
+  padding: 2rem 2rem;
+  margin-top: 3rem;
+}
+
+footer.footer p.footer-text {
+  color: #f7f9f9;
+}
